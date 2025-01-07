@@ -1,0 +1,183 @@
+<html>
+    <head>
+
+        <title>iicedblacktea</title>
+
+        <style>
+            body {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            }
+
+            @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+            }
+            header{
+                background-image: url('wix background.png'); /* make sure to paste relative path */
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100vh; /* 100% of the viewport height */
+                /*display: flex;  Flexbox for centering content */
+                padding: 25px 25px; /* creates margins */ 
+                overflow: auto;
+            }
+            .image-container 
+            {
+                position: relative;
+            }
+
+            .image-container .img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto; /* Adjust to perfectly center the image */
+                transform: translate(-20px, 90px) rotate(-8deg);
+                width: 650px; /* Adjust the image size */
+                height: auto;
+                padding: 0px;
+            }
+
+            .image-container .img2 { /* name tag */ 
+                position: absolute;
+                right: 0px; /* Adjust the position relative to the header */
+                top: 0px;
+                width: 130px; /* Set size for first image */
+                height: auto;
+                padding: 0px;
+            }
+
+            .image-container .img1 { /*left  flower */
+                position: absolute;
+                left: -20px; /* Adjust the position relative to the header */
+                top: 180px;
+                width: 440px; /* Set size for first image */
+                transform: scaleX(-1) rotate(-5deg);
+                height: auto;
+                padding: 0px;
+            }
+
+            .image-container .img4 { /* right flower */ 
+                position: absolute;
+                right: 0px; /* Adjust the position relative to the header */
+                top: 140px;
+                width: 400px; /* Set size for first image */
+                transform: rotate(-5deg);
+                height: auto;
+                padding: 0px;
+            }
+
+            .image-container .img3 { /* home title */ 
+                position: absolute;
+                top: 32%; 
+                left: 44%; 
+                /* transform: translate(-0%, 650%);*/
+                width: 100px;
+                height: auto;
+            }
+
+            .image-container .img5 { /* digital title */ 
+                position: absolute;
+                top: 36%; 
+                left: 55%; 
+                /* transform: translate(-0%, 650%);*/
+                width: 115px;
+                height: auto;
+            }
+            .image-container .img6 { /* film title */ 
+                position: absolute;
+                top: 48%; 
+                left: 41%; 
+                /* transform: translate(-0%, 650%);*/
+                width: 100px;
+                height: auto;
+            }
+            .image-container .img7 { /* videos title */ 
+                position: absolute;
+                top: 52%; 
+                left: 52%; 
+                /* transform: translate(-0%, 650%);*/
+                width: 110px;
+                transform: rotate(-5deg);
+                height: auto;
+            }
+
+            .image-container .img8 { /* bio title */ 
+                position: absolute;
+                top: 62%; 
+                left: 46%; 
+                /* transform: translate(-0%, 650%);*/
+                width: 90px;
+                transform: rotate(-5deg);
+                height: auto;
+            }
+
+            .overlay-text {
+                position: absolute;
+                top: 0px; 
+                left: 0%; 
+                color: rgb(122, 148, 125);
+                font-size: 43px; 
+                margin: 0;
+                display: inline-block;
+                text-shadow: 1px 1px 1px black;
+            }
+            .overlay-text1 {
+                position: absolute;
+                top: 40px; 
+                left: 0%; 
+                color: rgb(122, 148, 125);
+                font-size: 83px; 
+                margin: 0;
+                text-shadow: 1px 1px 1px black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Add content here -->
+         <header>
+        
+            <div class="image-container">
+                <img class="img1" src="flower_edited_edited_edited_edited.png" alt="Flower Scan">
+                <img class="img4" src="flower_edited_edited_edited_edited.png" alt="Flower Scan">
+                <img class="img" src="testingphotocopy_edited.png" alt="Phone Scan">
+                <img class="img2" src="ripped name_edited_edited.png" alt="Hannah Tse" >
+
+                <a href="index fr.html">
+                    <img class="img3" src="home title.png" alt="home button">
+                </a>
+
+                <a href="digital.html">
+                    <img class="img5" src="digital.png" alt="digital button">
+                </a>
+
+                <a href="film.html">
+                    <img class="img6" src="film title.png" alt="film button">
+                </a>
+
+                <a href="videos.html">
+                    <img class="img7" src="videos.png" alt="videos button">
+                </a>
+                
+                <a href="bio.html">
+                    <img class="img8" src="pages titles (2).png" alt="bio button">
+                </a>
+        
+                <div>
+                    <p class="overlay-text">welcome <span>to</span></p> <!-- Use span to keep "to" on the same line -->
+                    <p class="overlay-text1">iicedblacktea</p>
+                </div>
+            </div>
+            
+         </header>
+    </body>
+</html>
+

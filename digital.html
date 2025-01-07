@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            digital
+        </title>
+        
+        <style>
+            body {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            margin: 0;
+            padding: 0;
+            }
+
+            @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+            }
+            header
+            {
+                background-color: rgb(248, 248, 248);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 10vh; /* 100% of the viewport height */
+                /*display: flex;  Flexbox for centering content */
+                padding: 25px 25px; /* creates margins */ 
+                overflow: auto;
+            }
+            
+            h1{
+                color: rgb(122, 148, 125);
+                font-size: 60px; 
+                margin: 0;
+                text-shadow: 1px 1px 1px black;
+            }
+            footer{
+                align-items: center;
+                background-color: rgb(122, 148, 125);
+                width: 100%;
+                height: auto;
+                display: flex; /* Flexbox for centering content */
+                justify-content: center; /* Center content horizontally */
+                align-items: center; /* Center content vertically */
+                margin: 20;
+                padding: 0;
+            }
+            .footer-container{
+                display: flex; /* Aligns images horizontally */
+                justify-content: center; /* Centers the images within the header */
+                align-items: center; /* Aligns images vertically if different heights */
+                gap: 15px; /* Adds space between the images */
+            }
+            .image-container{
+                width: 50px;
+                height: auto;
+                padding: 15px;
+
+            }
+
+            .gallery-header {
+                text-align: center;
+                margin-bottom: 2rem; /* Adds space below the text */
+                font-size: 2rem; /* Changes the font size */
+                font-weight: bold; /* Makes the text bold */
+                color: #444; /* Adjusts text color */
+                letter-spacing: 1px; /* Adds spacing between letters */
+            }
+            .container{
+                padding: 2rem 5%; 
+                background-color: rgb(248, 248, 248);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100vh; /* 100% of the viewport height */
+                /*display: flex;  Flexbox for centering content */
+                padding: 25px 25px; /* creates margins */ 
+                overflow: auto;
+            }
+
+            .container .gallery-container{
+                columns: 15rem 3; /* length of individual column - number of column ,, will also reduce columns if window is minimized*/
+                gap: 1.4rem;
+            }
+
+            .container .gallery-container img{
+                width: 90%;
+                height: auto;
+                margin-bottom: 3rem;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(122, 148, 125);
+                padding: 1rem 2rem;
+            }
+
+            .menu {
+                display: none;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .menu li {
+                margin: 1rem 0;
+            }
+
+            .menu li a {
+                text-decoration: none;
+                color: white;
+                font-size: 1.2rem;
+            }
+
+            .menu-icon {
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                gap: 0.4rem;
+            }
+
+            .menu-icon span {
+                display: block;
+                width: 30px;
+                height: 3px;
+                background-color: white;
+                border-radius: 2px;
+                transition: all 0.3s ease;
+            }
+
+            .menu.active {
+                display: block;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: #333;
+                padding: 1rem 0;
+            }
+
+            @media (min-width: 768px) {
+                .menu {
+                    display: flex;
+                    gap: 2rem;
+            }
+
+            .menu li {
+                margin: 0;
+            }
+
+            .menu-icon {
+                display: none;
+            }
+        }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li><a href="index fr.html">home</a></li>
+                <li><a href="digital.html">digital</a></li>
+                <li><a href="videos.html">videos</a></li>
+                <li><a href="film.html">film</a></li>
+                <li><a href="bio.html">bio</a></li>
+            </ul>
+        </div>
+    
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector(".menu");
+                menu.classList.toggle("active");
+            }
+        </script>
+        <div class="container">
+                <!-- first image -->
+                <div class="gallery-header">click to see more :O !</div>
+                 <div class="gallery-container">
+                    <a href="lydia1.html">
+                        <img src="lydia pics/IMG_3939.PNG" alt="">
+                     </a>
+                    <a href="sarah1.html">
+                        <img src="photo gallery/sarah stand.jpg" alt="">
+                    </a>
+                    <a href="gracie1.html">
+                        <img src="photo gallery/gracie4.jpeg" alt="">
+                    </a>
+                   <a href="lydia2.html">
+                        <img src="lydia pics/lydia.jpg" alt="">
+                   </a>
+                   <a href="victoria1.html">
+                        <img src="misc photos/051E0E5F-52AD-4014-8827-C60207D3A946.JPG" alt="">
+                   </a>
+                   <a href="victoria2.html">
+                        <img src="victoria/IMG_3565.jpg" alt="">
+                   </a>
+                   <a href="nm.html">
+                        <img src="night market/emily1.jpeg" alt="">
+                   </a>
+                   <a href="taiwan-winter.html">
+                        <img src="taiwan/IMG_2549 3.JPG" alt="">
+                   </a>
+                 </div>
+                
+            </div>
+            <footer>
+                <div class="footer-container">
+                    <a href="http://www.linkedin.com/in/hannahytse">
+                    <img src="linkedin.png" alt="linkedin" class="image-container">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100085256113190&mibextid=LQQJ4d">
+                        <img src="facebook.png" alt="facebook" class="image-container">
+                    </a>
+                </div>
+            </footer>
+    </body>
+</html>
